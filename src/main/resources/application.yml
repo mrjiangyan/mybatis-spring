@@ -1,9 +1,12 @@
 spring:
-  datasource:
-    url: jdbc:mysql://192.168.9.24:3306/SpringGateway?verifyServerCertificate=false&useSSL=false&requireSSL=false
-    username : root
-    password: p@ssw0rd
-    driver-class-name: com.mysql.jdbc.Driver
+#  datasource:
+#    url: jdbc:mysql://192.168.9.24:3306/SpringGateway?verifyServerCertificate=false&useSSL=false&requireSSL=false
+#    username : root
+#    password: p@ssw0rd
+#    driver-class-name: com.mysql.jdbc.Driver
+
+  profiles:
+    active: dev
 
 
 mybatis:
@@ -15,4 +18,6 @@ logging:
 
 server:
   port: 8000
+
+
 

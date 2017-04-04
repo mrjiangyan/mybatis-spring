@@ -5,9 +5,6 @@
     <typeAliases>
         <package name="com.mybatis.domain"/>
     </typeAliases>
-    <!--<mappers>-->
-        <!--<mapper resource="mapper/RoomMapper.xml"/>-->
 
-    <!--</mappers>-->
 
 </configuration>
