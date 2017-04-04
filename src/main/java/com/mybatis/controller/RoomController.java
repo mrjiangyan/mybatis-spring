@@ -15,9 +15,16 @@ public class RoomController {
 
     @Autowired RoomService service;
 
+    @Autowired RoomService roomService;
+
     @RequestMapping(path = "/", method = RequestMethod.GET)
     public Room getRoom() {
 
         return service.selectRoomById(1);
+    }
+
+    @RequestMapping(path = "/dynamic", method = RequestMethod.GET)
+    public Room getInstanceRoom() {
+         return roomService.selectRoomById(1);
     }
 }
